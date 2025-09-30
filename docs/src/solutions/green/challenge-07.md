@@ -1,5 +1,7 @@
 # Challenge 7: Helligkeit
 
+Dein micro:bit kann die Helligkeit messen. Die Helligkeit wird mit einer Zahl von 0 bis 255 angegeben, wobei 0 der dunkelste und 255 der hellste Wert ist. Lasse deinen micro:bit einen Warnton abspielen, wenn der Helligkeitswert grösser als 150 wird.
+
 ```blocks
 basic.forever(function () {
     if (input.lightLevel() > 100) {
@@ -12,6 +14,8 @@ basic.forever(function () {
 ```
 
 ## Zusatzaufgabe
+
+ - Versuche die aktuelle Helligkeit auf dem Bildschirm anzuzeigen. Nutze dazu den folgenden Block:
 
 ```blocks
 basic.forever(function () {

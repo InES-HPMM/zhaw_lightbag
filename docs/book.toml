@@ -1,0 +1,27 @@
+[book]
+title = "ZHAW Lightbag Workshop"
+description = "Musterlösung für den ZHAW Lightbag Workshop"
+authors = ["wimd", "ebep"]
+
+language = "de"
+multilingual = true
+src = "src"
+
+
+
+[build]
+create-missing = false
+
+[preprocessor]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.3" # do not edit: managed by `mdbook-admonish install`
+
+[output]
+
+[output.html]
+fold.enable = true
+default-theme = "rust"
+additional-css = ["css/makecode.css", "css/page-aspects.css"]
+additional-js = ["js/zoom.js"]

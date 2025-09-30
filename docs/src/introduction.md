@@ -1,11 +1,7 @@
 
 # ZHAW Lightbag Workshop
 
-Der ZHAW Lightbag Workshop ist ein kreatives Projekt, das es ermöglicht, mit Licht und Programmierung zu experimentieren.
-
-## Hardware
-
-Die Hardware besteht aus einem micro:bit und einer Erweiterungskarte mit einem LED Ring.
+Der ZHAW Lightbag Workshop ist ein kreatives Projekt, das es ermöglicht, mit Licht und Programmierung zu experimentieren. Diese Dokumentation enthält die Lösungen für die Challenges. Die Challenge Cards sind unter dem Link [Challenge Cards](https://github.com/InES-HPMM/zhaw_lightbag/releases/download/challenge-cards-v4/zhaw_lightbag_challenge_cards.pdf) zu finden.
 
 
 ## Dokumentation

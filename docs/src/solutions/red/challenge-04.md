@@ -3,8 +3,18 @@
 Auf deinem LED-Ring soll immer nur eine LED leuchten. Immer nach einer Sekunde springt das Licht zur benachbarten LED und bewegt sich so endlos im Kreis.
 
 ```blocks
-
-
+let richtung = 0
+let strip = neopixel.create(DigitalPin.P0, 12, NeoPixelMode.RGB)
+richtung = 1
+let led_index = 0
+basic.forever(function () {
+    led_index = led_index + richtung
+    led_index = led_index % 12
+    strip.showColor(neopixel.colors(NeoPixelColors.Black))
+    strip.setPixelColor(led_index, neopixel.colors(NeoPixelColors.Orange))
+    strip.show()
+    basic.pause(1000)
+})
 ```
 
 ## Zusatzaufgabe
@@ -16,7 +26,21 @@ Auf deinem LED-Ring soll immer nur eine LED leuchten. Immer nach einer Sekunde s
 
 
 ```blocks
-
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    richtung = richtung * -1
+})
+let richtung = 0
+let strip = neopixel.create(DigitalPin.P0, 12, NeoPixelMode.RGB)
+richtung = 1
+let led_index = 0
+basic.forever(function () {
+    led_index = led_index + richtung
+    led_index = led_index % 12
+    strip.showColor(neopixel.colors(NeoPixelColors.Black))
+    strip.setPixelColor(led_index, neopixel.colors(NeoPixelColors.Orange))
+    strip.show()
+    basic.pause(1000)
+})
 
 ```
 
